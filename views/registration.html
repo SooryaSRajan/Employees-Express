@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Employee</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/index.js"></script>
+
+</head>
+
+<body>
+    <div class="root">
+        <div class="card">
+            <h1 style="text-align: left;">
+                Add New Employee
+            </h1>
+            <form id="form" onsubmit="return submitForm()" action="submit">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Employee ID</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="employee_id" name="employee_id" placeholder="Enter ID...">
+                        <span id="id_error"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Employee Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name" name="name" placeholder="Your name..">
+                        <span id="name_error"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Qualification</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="qualification" name="qualification" placeholder="Your qualification..">
+                        <span id="qualification_error"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Designation</label>
+                    </div>
+                    <div class="col-75">
+                        <select name="desg" id="desg">
+                            <option value="Sales Boy">Sales Boy</option>
+                            <option value="Janitor">Janitor</option>
+                            <option value="Manager">Manager</option>
+                            <option value="Travelling Salesman">Travelling Salesman</option>
+                            <option value="Accounting">Accounting</option>
+                            <option value="Human Rights">Human Rights</option>
+                            <option value="Warehouse Worker">Warehouse Worker</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Salary</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="salary" name="salary" placeholder="Your salary..">
+                        <span id="salary_error"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-flex">
+                        <button style="margin-right: 4px;" type="submit">
+                            Submit
+                        </button>
+                        <button onclick="closeWindow()" style="margin-left: 4px;" type="button">
+                            Exit
+                        </button>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
